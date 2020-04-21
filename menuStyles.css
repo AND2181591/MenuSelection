@@ -1,0 +1,251 @@
+body {
+    background-image: radial-gradient(#f2d90f, #e26a37, #ff3300);
+  }
+  /*************************************************
+  TOP CONTAINER
+  **************************************************/
+  #topHeadings {
+    border: solid 0px blue;
+    display: flex;
+  }
+  #topContainer{
+    border: solid 0px blue;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #title {
+    border: solid 0px blue;
+    width: 410px;
+  }
+  #totalContainer {
+    border: solid 0px blue;
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    padding-top: 4px;
+    margin-right: 115px;
+  }
+  #total {
+    border: solid 0px blue;
+  }
+  #totalText {
+    border: solid 0px blue;
+    margin-left: 8px;
+  }
+  #topButtonContainer {
+    border: solid 0px blue;
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    margin-right: 9px;
+  }
+  #complete {
+    margin-top: 15px;
+    margin-right: 4px;
+  }
+  #reset {
+    margin-top: 15px;
+    margin-left: 4px;
+  }
+  /*************************************************
+  MENU CONTAINER
+  **************************************************/
+  #menuContainer{
+    display: flex;
+    border: solid 0px red;
+    width: 100%;
+  }
+  #menu{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 12px;
+    width: 100%;
+    border: solid 0px red;
+  }
+  /*************************************************
+  PRICE CONTAINER
+  **************************************************/
+  #priceContainer {
+    border: solid 0px blue;
+    display: flex;
+    margin-top: -10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #price {
+    display: flex;
+    justify-content: space-around;
+    border: solid 0px red;
+    width: 100%;
+  }
+  .p {
+    border: solid 0px red;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  /*************************************************
+  BUTTONS
+  **************************************************/
+  .button {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #993d00;
+    color: #fff;
+    border-top: none;
+    border-right: 1px;
+    border-radius: 6px;
+    box-shadow: 0 4px #999
+  }
+  .button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.4);
+      -webkit-transition: none;
+         -moz-transition: none;
+              transition: none;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+
+  .button:hover:after {
+    width: 100%;
+    background-color: rgba(255,255,255,0);
+    border-radius: 6px;
+    -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+  }
+  .button:active {
+    border-radius: 6px;
+    box-shadow: 0 1px #666666;
+    transform: translateY(2px);
+  }
+  .button:focus { 
+      outline: none; 
+  }
+  /*************************************************
+  IMAGE CONTAINER
+  **************************************************/
+  #imageContainer {
+    border: solid 0px blue;
+    margin-top: -18px;
+    display: flex;
+  }
+  #order {
+    border: solid 0px red;
+    margin: auto;
+  }
+  #completeOrder {
+    border: solid 0px blue;
+    text-align:center;
+  }
+  
+  
+  
+  #receipt {
+    width: 200px;
+    height: 100%;
+    list-style-type: circle;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: -18px;
+    padding: 15px;
+    display: none;
+  }
+  #orderNum {
+    font-weight: bold;
+  }
+  #totalReceipt {
+    font-weight: bold;
+  }
+  
+  /*************************************************
+  RESPONSE DESIGN
+  **************************************************/
+  
+  @media only screen and (max-width: 1600px){
+      #totalContainer {
+        margin-left: 0%;
+      }
+      #topButtonContainer {
+        margin-right: 9px;
+      }
+  }
+  
+  @media only screen and (max-width: 1500px){
+      #totalContainer {
+        margin-right: 9%;
+      }
+      #topButtonContainer {
+        margin-right: 6px;
+      }
+  }
+  
+  @media only screen and (max-width: 1400px){
+      #totalContainer {
+        margin-left: -3%;
+      }
+      #topButtonContainer {
+        margin-right: 3px;
+      }
+  }
+  
+  @media only screen and (max-width: 1300px){
+      #totalContainer {
+        margin-left: -5%;
+      }
+      #topButtonContainer {
+        margin-right: 0px;
+      }
+  }
+  
+  @media only screen and (max-width: 1250px){
+      #totalContainer {
+        margin-left: -7%;
+      }
+      #topButtonContainer {
+        margin-right: -3px;
+      }
+  }
+  
+  @media only screen and (max-width: 1200px){
+      #topHeadings {
+        justify-content: center;
+      }
+      #topContainer{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #totalContainer {
+        display: flex;
+        justify-content: center;
+        width: 170px;
+        margin-right: 7px;
+        margin-left: 24px;
+      }
+      #topButtonContainer {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin-right: 23px;
+      }
+      
+  }
+  
+  
+  
